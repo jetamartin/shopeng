@@ -7,7 +7,7 @@
   </div>
 
   <% @category.items.each do |item| %>
-    <div class="span2 shopeng-item"
+    <div class="span2 shopeng-item">
       <%= image_tag item.image_url(:thumb).to_s %>
       <h3><%= item.title %></h3>
       <p>

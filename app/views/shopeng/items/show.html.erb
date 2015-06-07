@@ -17,7 +17,9 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @item.image_url(:thumb) %>
+  <!-- <%= image_tag @item.image_url(:thumb).to_s %> -->
+  <%= image_tag @item.image_url.to_s %>
+
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
